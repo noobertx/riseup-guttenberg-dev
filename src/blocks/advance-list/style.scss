@@ -1,0 +1,278 @@
+.wprig-block-advanced-list {
+    .wprig-action-button {
+        padding: 5px 15px;
+        margin-top: 15px;
+        border-radius: 4px;
+        font-size: 14px;
+        background: #f0f1f3;
+    }
+    .wprig-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        >li {
+            position: relative;
+            margin: 0;
+            display: block;
+            transition: color 400ms, background-color 400ms, border-color 400ms, box-shadow 400ms;
+            &::before,
+            &::after {
+                font-family: "Font Awesome 5 Pro";
+                font-weight: 900;
+                transition: color 400ms, background-color 400ms;
+            }
+            >span,
+            >div {
+                display: inline-block;
+            }
+
+            .wprig-action-remove {
+                display: none;
+                font-size: 12px;
+                width: 18px;
+                height: 18px;
+                line-height: 20px;
+                text-align: center;
+                background: rgba(0, 0, 0, .8);
+                color: #fff;
+                border-radius: 10px;
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                &.alignment-left {
+                    right: auto;
+                    left: 0;
+                }
+            }
+
+            &:hover {
+                .wprig-action-remove {
+                    display: block;
+                }
+            }
+        }
+
+        [contenteditable=true]:empty:before {
+            content: attr(placeholder);
+            color: gray;
+            padding: 0px 5px 0px 5px;
+            display: block; /* For Firefox */
+        }
+        
+        .wprig-action-button {
+            margin-top: 15px;
+        }
+    }
+
+
+    &.wprig-alignment-left,
+    &.wprig-alignment-center {
+        .wprig-list {
+            >li::after {
+                display: none;
+            }
+        }
+    }
+
+    &.wprig-alignment-center {
+        .wprig-list {
+            >li {
+                justify-content: center;
+            }
+        }
+    }
+
+    &.wprig-alignment-right {
+        .wprig-list {
+            >li {
+                justify-content: flex-end;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .wprig-list-type-unordered {
+        &.wprig-list-bullet-check {
+            >li::before,
+            >li::after {
+                content: "\f00c";
+            }
+        }
+
+        &.wprig-list-bullet-check-square {
+            >li::before,
+            >li::after {
+                content: "\f14a";
+            }
+        }
+
+        &.wprig-list-bullet-check-square-outline {
+            >li::before,
+            >li::after {
+                content: "\f14a";
+                font-weight: 400;
+            }
+        }
+
+        &.wprig-list-bullet-check-double {
+            >li::before,
+            >li::after {
+                content: "\f560";
+            }
+        }
+        
+        &.wprig-list-bullet-check-circle {
+            >li::before,
+            >li::after {
+                content: "\f058";
+            }
+        }
+
+        &.wprig-list-bullet-check-circle-outline {
+            >li::before,
+            >li::after {
+                content: "\f058";
+                font-weight: 400;
+            }
+        }
+
+        &.wprig-list-bullet-square {
+            >li::before,
+            >li::after {
+                content: "\f0c8";
+            }
+        }
+
+        &.wprig-list-bullet-square-outline {
+            >li::before,
+            >li::after {
+                content: "\f0c8";
+                font-weight: 400;
+            }
+        }
+        
+        &.wprig-list-bullet-circle {
+            >li::before,
+            >li::after {
+                content: "\f111";
+            }
+        }
+
+        &.wprig-list-bullet-circle-outline {
+            >li::before,
+            >li::after {
+                content: "\f111";
+                font-weight: 400;
+            }
+        }
+
+        &.wprig-list-bullet-arrow-right {
+            >li::before,
+            >li::after {
+                content: "\f061";
+            }
+        }
+
+        &.wprig-list-bullet-arrow-left {
+            >li::before,
+            >li::after {
+                content: "\f060";
+            }
+        }
+
+        &.wprig-list-bullet-arrow-circle-right {
+            >li::before,
+            >li::after {
+                content: "\f0a9";
+            }
+        }
+
+        &.wprig-list-bullet-arrow-circle-left {
+            >li::before,
+            >li::after {
+                content: "\f0a8";
+            }
+        }
+        
+        &.wprig-list-bullet-arrow-alt-circle-right {
+            >li::before,
+            >li::after {
+                content: "\f35a";
+                font-weight: 400;
+            }
+        }
+        &.wprig-list-bullet-arrow-alt-circle-left {
+            >li::before,
+            >li::after {
+                content: "\f359";
+                font-weight: 400;
+            }
+        }
+        &.wprig-list-bullet-long-arrow-alt-right {
+            >li::before,
+            >li::after {
+                content: "\f30b";
+            }
+        }
+        &.wprig-list-bullet-long-arrow-alt-left {
+            >li::before,
+            >li::after {
+                content: "\f30a";
+            }
+        }
+        &.wprig-list-bullet-chevron-right {
+            >li::before,
+            >li::after {
+                content: "\f054";
+            }
+        }
+        &.wprig-list-bullet-chevron-left {
+            >li::before,
+            >li::after {
+                content: "\f053";
+            }
+        }
+        &.wprig-list-bullet-angle-right {
+            >li::before,
+            >li::after {
+                content: "\f105";
+            }
+        }
+        &.wprig-list-bullet-angle-left {
+            >li::before,
+            >li::after {
+                content: "\f104";
+            }
+        }
+        &.wprig-list-bullet-star {
+            >li::before,
+            >li::after {
+                content: "\f005";
+            }
+        }
+        &.wprig-list-bullet-star-outline {
+            >li::before,
+            >li::after {
+                content: "\f005";
+                font-weight: 400;
+            }
+        }
+    }
+
+    .wprig-list-type-ordered {
+        counter-reset: wprig-ol-counter;
+        >li {
+            counter-increment: wprig-ol-counter;
+            &::before,
+            &::after {
+                text-align: center;
+                font-size: 1em;
+                content: counter(wprig-ol-counter);
+            }
+        }
+    }
+}

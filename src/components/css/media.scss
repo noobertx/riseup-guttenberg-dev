@@ -1,0 +1,36 @@
+.wprig-media{
+	margin-bottom: 15px;
+	label{
+		margin-bottom: 10px;
+		display: block;
+	}
+	.wprig-media-actions {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	.wprig-single-img {
+		.wprig-media-image-parent{
+			position: relative;
+			display: inline-block;
+			min-height: 140px;
+			min-width: 140px;
+			img{
+				margin: 0;
+			}
+		}
+	}
+	.wprig-placeholder-image {
+		border: 1px dashed #dddd;
+		padding: 20px 20px 25px;
+		text-align: center;
+		background: #ffffff;
+		cursor: copy;
+		border-radius: 5px;
+		span{
+			display: block;
+			margin-top: 8px;
+			text-align: center;
+		}
+	}
+}

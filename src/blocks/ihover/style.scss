@@ -1,0 +1,140 @@
+.wprig-ihover-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .wprig-secondary {
+        position: absolute;
+    }
+
+    .wp-block-wprig-ihover-face{
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .wp-block-wprig-ihover-face:hover{
+        cursor:pointer;
+    }
+}
+
+.wprig-ihover.wprig-ihover-effect-1 {
+    perspective: 900px;
+    position: relative;
+    border: 8px solid #fff;
+    /* box-shadow: 1px 1px 3px rgba(0,0,0,.3); */
+}
+
+.wprig-ihover.wprig-ihover-effect-1.right-to-left .wprig-primary{
+    transform: rotateY(0);
+    transform-origin: 0 50%;
+    opacity: 1;
+    transition: all .35s ease-in-out .3s;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.right-to-left .wprig-secondary {
+    transform: rotateY(-90deg);
+    transform-origin: 100% 50%;
+    opacity: 0;
+    transition: all .35s ease-in-out .3s;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.right-to-left:hover .wprig-primary{
+    transform: rotateY(90deg);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.right-to-left:hover .wprig-secondary{
+    transform: rotateY(0);
+    opacity: 1;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.left-to-right .wprig-primary{
+    transform: rotateY(0);
+    transform-origin: 100% 50%;
+    opacity: 1;
+    transition: all .35s ease-in-out .35s;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.left-to-right .wprig-secondary {
+    transform: rotateY(90deg);
+    transform-origin: 0% 50%;
+    opacity: 0;
+    transition: all .35s ease-in-out .3s;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.left-to-right:hover .wprig-primary{
+    transform: rotateY(-90deg);
+    transform-origin: 100% 50%;
+    opacity: 0;   
+    visibility:hidden;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.left-to-right:hover .wprig-secondary{
+    transform: rotateY(0);
+    opacity: 1;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.top-to-bottom .wprig-primary{
+    transform: rotateX(0);
+    transform-origin: 50% 100%;
+    opacity: 1;
+    transition: all .35s ease-in-out .3s;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.top-to-bottom .wprig-secondary {
+    transform: rotateX(-90deg);
+    transform-origin: 50% 0;
+    opacity: 0;
+    transition: all .35s ease-in-out .3s;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.top-to-bottom:hover .wprig-primary{
+    transform: rotateX(90deg);
+    transform-origin: 50% 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.wprig-ihover.wprig-ihover-effect-1.top-to-bottom:hover .wprig-secondary{
+    transform: rotateX(0);
+    transform-origin: 50% 0%;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.wprig-ihover.wprig-ihover-effect-1.bottom-to-top .wprig-primary{
+    transform: rotateX(0);
+    transform-origin: 50% 0%;    
+    opacity: 1;
+    transition: all .35s ease-in-out .3s;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.bottom-to-top .wprig-secondary {
+    transform: rotateX(90deg);
+    transform-origin: 50% 100%;
+    opacity: 0;
+    transition: all .35s ease-in-out .3s;
+}
+
+.wprig-ihover.wprig-ihover-effect-1.bottom-to-top:hover .wprig-primary{
+    transform: rotateX(-90deg);
+    transform-origin: 50% 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.wprig-ihover.wprig-ihover-effect-1.bottom-to-top:hover .wprig-secondary{
+    transform: rotateX(0);
+    transform-origin: 50% 100%;
+    opacity: 1;
+    visibility: visible;
+}

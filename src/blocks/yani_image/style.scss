@@ -1,0 +1,75 @@
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6{
+    color :unset;
+}
+
+.yani-image-media {
+    figure {
+    padding: 0;
+    margin: 0;
+        img.yani-image-image {
+            width: 100%;
+        }    
+    }
+}
+
+.yani-image-content {
+    flex-direction: column;
+}
+
+.yani-horizontal-alignment-left figcaption,
+.yani-horizontal-alignment-left .yani-image-content .yani-image-title,
+.yani-horizontal-alignment-left .yani-image-content .yani-image-sub-title{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.yani-horizontal-alignment-center figcaption ,
+.yani-horizontal-alignment-center .yani-image-title,
+.yani-horizontal-alignment-center .yani-image-sub-title{
+    display: flex;
+    justify-content: center;    
+    text-align: center;
+}
+
+.yani-horizontal-alignment-right figcaption ,
+.yani-horizontal-alignment-right .yani-image-title,
+.yani-horizontal-alignment-right .yani-image-sub-title {
+    display: flex;
+    justify-content: flex-end;    
+    text-align: right;
+}
+
+.yani-image-wrapper{
+
+    .yani-image-content-inner h1,
+    .yani-image-content-inner h2 ,
+    .yani-image-content-inner h3 ,
+    .yani-image-content-inner h4 ,
+    .yani-image-content-inner h5 ,
+    .yani-image-content-inner h6 {
+        margin: 0;
+    }
+}
+
+
+
+.yani-hover-animation-type-zoom-out img {
+    transform: scale(1.1);
+    transition: 0.25s transform;
+    cursor: pointer;
+}
+
+.yani-hover-animation-type-zoom-out:hover img {
+    transform: scale(1);
+}
+
+.yani-image-container {
+    width: 100%;
+    overflow: hidden;
+}

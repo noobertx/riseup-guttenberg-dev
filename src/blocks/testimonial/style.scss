@@ -1,0 +1,105 @@
+.wprig-block-testimonial {
+    transition: all 400ms;
+    // Editor line height hack
+    .editor-rich-text {
+        .editor-rich-text__tinymce {
+            line-height: inherit;
+        }
+    }
+
+    .wprig-testimonial-quote {
+        .wprig-quote-icon {
+            line-height: 1;
+            width: auto;
+            height: auto;
+        }
+
+        &.wprig-position-bottom {
+            .wprig-quote-icon {
+                transform: scaleY(-1);
+            }
+        }
+    }
+
+    .wprig-testimonial-avatar {
+        &.wprig-image-placeholder i {
+            font-style: normal;
+            font-size: .5em;
+        }
+    }
+
+    .wprig-testimonial-avatar-layout-left,
+    .wprig-testimonial-avatar-layout-right {
+        display: inline-flex;
+        align-items: center;
+        .wprig-testimonial-author-info {
+            text-align: left;
+        }
+    }
+
+    .wprig-testimonial-avatar-layout-right {
+        .wprig-testimonial-author-info {
+            text-align: right;
+        }
+    }
+
+    //rating
+    .wprig-testimonial-ratings {
+        unicode-bidi: bidi-override;
+        display: inline-block;
+        position: relative;
+        letter-spacing: 5px;
+        --wprig-testimonial-rating: 0%;
+        &:before, &:after{
+            content: "\f005\f005\f005\f005\f005";
+            font-family: 'Font Awesome\ 5 Pro';
+            font-weight: 400;
+            display: block;
+            white-space: nowrap;
+            z-index: 0;
+        }
+
+        &:before{
+            position: absolute;
+            z-index: 1;
+            left: 0px;
+            overflow: hidden;            
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 900;
+            content: "\f005\f005\f005\f005\f005";
+            // width: var(--wprig-testimonial-rating);
+        }
+
+        /**
+         * For Backward Compatibility
+         */
+        &[data-wprigrating="1"]:before {
+            width: 20%;
+        }
+        &[data-wprigrating="1.5"]:before {
+            width: 29%;
+        }
+        &[data-wprigrating="2"]:before {
+            width: 40%;
+        }
+        &[data-wprigrating="2.5"]:before {
+            width: 49%;
+        }
+        &[data-wprigrating="3"]:before {
+            width: 60%;
+        }
+        &[data-wprigrating="3.5"]:before {
+            width: 69%;
+        }
+        &[data-wprigrating="4"]:before {
+            width: 80%;
+        }
+        &[data-wprigrating="4.5"]:before {
+            width: 89%;
+        }
+        &[data-wprigrating="5"]:before {
+            width: 100%;
+        }
+        // end backward compatibility
+    }
+}

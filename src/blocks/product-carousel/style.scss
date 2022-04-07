@@ -1,0 +1,49 @@
+
+
+  
+  .is-sidebar-opened .wprig-product-carousel-wrapper{
+    max-width: 60.56vw;
+  }
+  
+  .wprig-product-carousel-wrapper{
+    opacity: 0;
+    max-width: 85.91vw;    
+    margin: auto;
+    transition: 0.5s opacity;
+      &.slick-initialized{
+        opacity: 1;
+        .slick-next{
+          right: 0;
+          z-index: 9;
+        }
+        .slick-prev{
+          left: 0;
+          z-index: 9;
+        }
+      }
+
+      .wprig-product-carousel{
+        position: relative;
+        .onsale {
+          min-height: 3.236em;
+          min-width: 3.236em;
+          padding: .202em;
+          font-size: 1em;
+          font-weight: 700;
+          position: absolute;
+          text-align: center;
+          line-height: 3.236;
+          top: 0;
+          right: 0;
+          margin: 0;
+          border-radius: 100%;
+          background-color: #77a464;
+          color: #fff;
+          font-size: .857em;
+          z-index: 9;
+        }
+        .wprig-product-carousel-btn {
+          padding: 10px;
+      }
+      }
+      }

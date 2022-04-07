@@ -1,0 +1,25 @@
+
+
+.wprig-tab-nav {
+    display: flex;
+    .wprig-tab-item {
+        padding: 5px 10px;
+        background: #333;
+        margin: 0 10px 0 0;
+        color: #fff;
+        border: 1px solid #333;
+    }
+    .wprig-active {
+        // color: #333;
+        // background: #fff;
+    }
+
+    div[data-type="wprig/ct-item"] > div {
+        display: none;
+    }
+    
+    div[data-type="wprig/ct-item"] > div.wprig-active {
+        display: block;
+    }
+}
+

@@ -1,0 +1,107 @@
+.wprig-block-info-box {
+    transition: border-color 400ms, background-color 400ms, box-shadow 400ms;
+    h1, h2, h3, h4, h5, h6 {
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        position: relative;
+        &::before,
+        &::after {
+            display: none !important;
+        }
+
+        .wprig-text-has-bgcolor {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .wprig-info-box-media {
+        display: inline-block;
+        line-height: 1;
+        text-align: center;
+        overflow: hidden;
+        i,
+        span,
+        img {
+            font-style: normal;
+            position: relative;
+            display: block;
+            transition: 400ms;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        &.wprig-media-has-bg {
+            i,
+            .wprig-info-box-number {
+                min-width: 1em;
+                height: 1em;
+                white-space: nowrap;
+                &:before {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    .wprig-info-box-title {
+        margin: 0 !important;
+    }
+
+    .wprig-info-box-media,
+    .wprig-info-box-title,
+    .wprig-info-box-text {
+        transition: color 400ms, border-color 400ms, background-color 400ms, box-shadow 400ms;
+    }
+    
+    &.wprig-info-box-layout-2,
+    &.wprig-info-box-layout-3 {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+
+        .wprig-info-box-body {
+            -ms-flex: 1;
+            flex: 1;
+        }
+    }
+
+    &.wprig-info-box-layout-3 {
+        flex-direction: row-reverse;      
+    }
+
+    .wprig-separator {
+        font-size: 0;
+        .wprig-separator-type-css,
+        .wprig-separator-type-svg {
+            display: inline-block;
+        }
+    }
+
+    .wprig-separator-position-left,
+    .wprig-separator-position-right,
+    .wprig-separator-position-leftright {
+        .wprig-info-box-title-inner {
+            display: inline-flex;
+            align-items: center;
+
+            .wprig-info-box-title,
+            .wprig-separator {
+                display: inline-flex;
+            }
+        }
+    }
+}
+
+// .wprig-block-info-box{
+//     display: flex;
+//     align-items: center;
+//     flex-direction: column;
+// }

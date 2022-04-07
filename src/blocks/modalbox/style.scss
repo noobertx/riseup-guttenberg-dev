@@ -1,0 +1,45 @@
+.wprig-modal-elements{
+    min-height: 60px;
+}
+
+
+.gutten-modal-123 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    transition: 0.25s opacity;
+}
+
+.gutten-modal-123.active {
+    z-index: 1000;
+    opacity: 1;
+}
+
+.gutten-modal-123 >div >div {
+    width: 100%;
+    background: #fff;
+    min-height: 500px;
+}
+
+.gutten-modal-123 > .wprig-block-wrapper-block {
+    display: flex;
+    height: 100%;
+    width: 80vw;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.is-mode-visual .gutten-modal-123 {
+    position: unset;
+
+    > .wprig-block-wrapper-block {
+        display: block;
+    }
+
+}

@@ -1,0 +1,16 @@
+.wprig-field-url{
+    .wprig-url-input-group{
+        display: flex;
+        input{
+            flex-grow: 1;
+            margin: 0 6px 0 0;
+        }
+        button{
+            height: 30px;
+            line-height: 28px;
+        }
+    }
+    .wprig-url-advance-options{
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,41 @@
+.wprig-block-heading {
+    transition: color 200ms ease-in-out, background-color 200ms ease-in-out, border-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    position: relative;
+    h1, h2, h3, h4, h5, h6 {
+        padding: 0;
+        margin: 0;
+        line-height: 1;
+        position: relative;
+        &::before,
+        &::after {
+            display: none !important;
+        }
+    }
+
+    .wprig-text-has-bgcolor {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .wprig-separator {
+        font-size: 0;
+        .wprig-separator-type-css,
+        .wprig-separator-type-svg {
+            display: inline-block;
+        }
+    }
+
+    &.wprig-separator-position-left,
+    &.wprig-separator-position-right,
+    &.wprig-separator-position-leftright {
+        .wprig-heading-container {
+            display: inline-flex;
+            align-items: center;
+
+            .wprig-heading-selector,
+            .wprig-separator {
+                display: inline-flex;
+            }
+        }
+    }
+}

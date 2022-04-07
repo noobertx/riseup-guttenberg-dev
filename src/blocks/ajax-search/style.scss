@@ -1,0 +1,24 @@
+.wprig-block-search.label--right .wprig-search-field,
+.wprig-block-search.label--left .wprig-search-field {
+    display: block;
+    width: -webkit-fill-available;
+}
+
+.wprig-block-search.label--left {
+    display: flex;
+}
+
+.wprig-block-search.label--top {
+    display: flex;
+    flex-direction: column;
+}
+
+.wprig-block-search.label--bottom {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.wprig-block-search.label--right {
+    display: flex;
+    flex-direction: row-reverse;
+}

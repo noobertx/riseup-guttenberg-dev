@@ -1,0 +1,49 @@
+.yani-info-box-body{
+    h1,h2,h3,h4,h5,h6{
+        width: 100%;
+        margin:0!important;
+    }
+}
+.yani-block-info-box {
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.yani-info-box-layout-1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    .yani-info-box-body{
+        width: 100%
+    }
+}
+
+.yani-info-box-layout-2 {
+    display: flex;
+    align-items: center;
+    .yani-info-box-media {
+        width: 30%;
+        margin-right: 20px;
+    }
+    .yani-info-box-body{
+        width: 70%
+    }
+}
+
+
+.yani-info-box-layout-3 {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+
+    .yani-info-box-media {
+        width: 30%;
+        margin-left: 20px;
+    }
+
+    .yani-info-box-body{
+        width: 70%
+    }
+}

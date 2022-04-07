@@ -1,0 +1,30 @@
+.yani-countdown__content{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    .yani-countdown__section {
+        width: 15%;
+        h4 {
+            margin: 0;
+            padding: 20px 0;
+            vertical-align: middle;
+            border: 1px solid;
+        }
+    }
+    .countdown__label{
+        text-align:center;
+    } 
+}
+
+
+.simply-section >div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.countdown__content {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}

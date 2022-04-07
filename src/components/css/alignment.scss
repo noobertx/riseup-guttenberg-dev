@@ -1,0 +1,10 @@
+.wprig-field-button-list {
+    &.wprig-field-button-list-fluid {
+        display: flex;
+        justify-content: space-between;
+        .wprig-button {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

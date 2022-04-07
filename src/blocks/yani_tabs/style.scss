@@ -1,0 +1,139 @@
+.wprig-block-tab {
+	.wprig-tab-nav {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		.wprig-tab-item {
+			display: block;
+			text-align: center;
+			position: relative;
+
+			.wprig-tab-title {
+				cursor: pointer;
+				display: block;
+				display: flex;
+				align-items: center;
+				transition: color 400ms, background-color 400ms, border-color 400ms;
+				position: relative;
+				justify-content: center;
+				&.wprig-has-icon-top {
+					flex-direction: column;
+				}
+			}
+
+			&:hover {
+				.wprig-action-tab-remove {
+					display: block;
+				}
+			}
+		}
+
+		&.wprig-alignment-left {
+			justify-content: flex-start;
+		}
+
+		&.wprig-alignment-center {
+			justify-content: center;
+		}
+
+		&.wprig-alignment-right {
+			justify-content: flex-end;
+		}
+
+		&.wprig-alignment-justify {
+			.wprig-tab-item {
+				-ms-flex: 1 1 auto;
+				flex: 1 1 auto;
+			}
+		}
+
+		.wprig-action-tab-remove {
+			display: none;
+			font-size: 12px;
+			width: 18px;
+			height: 18px;
+			line-height: 20px;
+			text-align: center;
+			background: rgba(0, 0, 0, 0.8);
+			color: #fff;
+			position: absolute;
+			top: -9px;
+			right: -9px;
+			border-radius: 10px;
+			z-index: 1;
+			cursor: pointer;
+		}
+	}
+
+	&.wprig-tab-style-tabs {
+		.wprig-tab-nav {
+			.wprig-tab-item.wprig-active {
+				.wprig-tab-title {
+					&:after {
+						content: " ";
+						position: absolute;
+						left: 0;
+						width: 100%;
+						transition: color 400ms, background-color 400ms, border-color 400ms;
+					}
+				}
+			}
+		}
+	}
+
+	.wprig-add-new-tab {
+		cursor: pointer;
+		display: inline-flex;
+		align-items: center;
+		margin-left: 10px;
+		padding: 0px 15px;
+		border-radius: 3px;
+		color: #666;
+		transition: color 300ms;
+		&:hover {
+			color: #0085ba;
+			border-color: #0085ba;
+		}
+	}
+	.wp-block-wprig-tab.wprig-tab-content {
+		position: absolute;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity 400ms ease-in;
+		&.wprig-active {
+			position: static;
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	&.wprig-tab-style-pills,
+	&.wprig-tab-style-tabs {
+		.wprig-tab-item {
+			margin-bottom: 10px;
+		}
+	}
+
+	.wp-block.wprig-tab-content {
+		opacity: 0;
+		position: absolute;
+		visibility: hidden;
+		transition: opacity 400ms;
+		.wprig-tabs-innerblock {
+			.block-list-appender {
+				text-align: center;
+				.block-editor-inserter {
+					display: inline-block;
+					min-width: 300px;
+				}
+			}
+		}
+		&.wprig-active {
+			position: relative;
+			opacity: 1;
+			visibility: visible;
+			transition: opacity 400ms;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+.wprig-field-tabs {
+    margin-left: -16px;
+    margin-right: -16px;
+    background: #f7f8fc;
+    &:last-child {
+      margin-bottom: -16px !important;
+    }
+    &.wprig-has-label {
+      border-top: 1px solid #e9e9e9;
+      .wprig-field-tab-header {
+        padding-top: 10px;
+        label {
+          margin: 0 15px;
+        }
+      }
+      .wprig-field-tab-menus {
+        margin-top: 10px;
+      }
+    }
+    &.panel-group {
+      margin-top: 20px;
+      .wprig-field-tab-menus {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-evenly;
+        .tab-menu-wrapper {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .wprig-tab-menu {
+            flex-grow: 1;
+          }
+        }
+      }
+    }
+    &:not(.panel-group) {
+      .wprig-field-tab-menus {
+        display: flex;
+        button {
+          flex-grow: 1;
+          justify-content: center;
+          padding: 7px 15px;
+          box-shadow: none;
+          border: none;
+          transition: 400ms;
+          border: 1px solid #e9e9e9;
+          cursor: pointer;
+          &:not(:last-child) {
+            border-right: none;
+          }
+          &.active {
+            background: #D2E7FF;
+            color: #2184f9;
+            border-color: #A9D0FF;
+            + button{
+              border-left-color: #A9D0FF;
+            }
+          }
+        }
+      }
+  
+      .wprig-field-tab-items {
+        padding: 15px;
+      }
+    }
+  }
+  
+  .wprig-field .wprig-field-boxshadow,
+  .wprig-field.wprig-field-typography {
+    border: 1px solid #e9e9e9;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #ffffff;
+  }
+  

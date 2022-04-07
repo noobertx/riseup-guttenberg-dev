@@ -1,0 +1,251 @@
+.wprig-block-timeline {
+	position: relative;
+	
+	// Bar
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		border-radius: 50px;
+	}
+
+	&.wprig-timeline-orientation-left {
+		&:after {
+			left: 0;
+		}
+	}
+
+	&.wprig-timeline-orientation-right {
+		&:after {
+			right: 0;
+		}
+	}
+	.wprig-timeline-date-container {
+		position: relative;
+    }
+    &.wprig-timeline-orientation-center {
+        .wprig-timeline-date-container {
+            position: absolute;
+        }
+    }
+
+	// Image
+	.wprig-timeline-image-container {
+		&.wprig-empty-image {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #f5f5f5;
+			border: 2px dashed #e5e5e5;
+			padding: 30px;
+			border-radius: 5px;
+			min-height: 200px;
+		}
+		.wprig-timeline-content-image-editor {
+			position: relative;
+			display: inline-block;
+			img {
+				display: inline-block;
+			}
+			.wprig-media-actions {
+				top: 10px;
+				right: 10px;
+				position: absolute;
+				z-index: 2;
+			}
+		}
+
+		.wprig-insert-image {
+			text-align: center;
+			display: inline-block;
+			color: #2184F9;
+			text-decoration: none;
+			line-height: 1;
+			span {
+				margin-top: 5px;
+				display: block;
+			}
+		}
+	}
+
+	.wprig-timeline-connector {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+	}
+
+	.wprig-timeline-item {
+		position: relative;
+	}
+
+	// Content
+	.wprig-timeline-content {
+		position: relative;
+		
+		.wprig-action-timeline-remove {
+			display: none;
+			font-size: 12px;
+			width: 18px;
+			height: 18px;
+			line-height: 20px;
+			text-align: center;
+			background: rgba(0, 0, 0, .8);
+			color: #fff;
+			position: absolute;
+			top: -9px;
+			right: -9px;
+			border-radius: 10px;
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		&:before {
+			content: " ";
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			top: 50%;
+			transform: translateY(-50%);
+			border-width: 15px;
+			z-index: 1;
+		}
+
+		&.wprig-content-has-border {
+			&:after {
+				content: " ";
+				position: absolute;
+				width: 0;
+				height: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				border-style: solid;
+				z-index: 0;
+			}
+		}
+		
+		&:hover {
+			.wprig-action-timeline-remove {
+				display: block;
+			}
+		}
+	}
+
+	// Desktop
+	@media (min-width: 768px) {
+		// Center
+		&.wprig-timeline-orientation-center {
+			
+			// Bar
+			&::after {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			.wprig-timeline-item {
+				width: 50%;
+			}
+
+			.wprig-timeline-date-container {
+				display: block;
+				top: 50%;
+				transform: translateY(-50%);
+				text-align: left;
+				white-space: nowrap;
+				width: 100%;
+			}
+
+			.wprig-timeline-left {
+				left: 0;
+				.wprig-timeline-content {
+					&:before {
+						right: -30px;
+					}
+				}
+				.wprig-timeline-date-container {
+					left: 100%;
+					text-align: left;
+				}
+			}
+		
+			.wprig-timeline-right {
+				left: 50%;
+				.wprig-timeline-content {
+					&:before {
+						left: -30px;
+					}
+				}
+				.wprig-timeline-date-container {
+					right: 100%;
+					text-align: right;
+				}
+			}
+		}
+
+		&.wprig-timeline-orientation-left {
+			.wprig-timeline-content {
+				&:before {
+					left: -30px;
+				}
+			}
+
+			.wprig-timeline-date-container {
+				margin-top: 5px;
+				margin-bottom: 5px;
+				left: 0;
+			}
+		}
+
+		&.wprig-timeline-orientation-right {
+			.wprig-timeline-content {
+				&:before {
+					right: -30px;
+				}
+			}
+
+			.wprig-timeline-date-container {
+				margin-top: 10px;
+				right: 0;
+			}
+		}
+	}
+
+
+
+	// Phone
+	@media (max-width: 767px) {
+		&.wprig-timeline-orientation-center {
+
+			.wprig-timeline-content {
+				&:before {
+					left: -30px;
+				}
+			}
+
+			.wprig-timeline-date-container {
+				margin-top: 10px;
+            }
+            .wprig-timeline-date-container {
+                position: relative;
+            }
+        }
+
+		&.wprig-timeline-orientation-center,
+		&.wprig-timeline-orientation-left {
+			margin-left: 20px;
+        }
+        &.wprig-timeline-orientation-left {
+            .wprig-timeline-date-container {
+				position: absolute;
+			}  
+        }
+		&.wprig-timeline-orientation-right {
+			margin-right: 20px;
+		}
+	}
+}

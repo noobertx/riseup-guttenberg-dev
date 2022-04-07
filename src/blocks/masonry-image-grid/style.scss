@@ -1,0 +1,50 @@
+
+.wprig-grids-editor{
+    overflow: hidden;
+    .cells{
+        position: relative;
+        z-index: 6;
+        overflow: hidden;
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items:center;
+            // background: rgba(255,0,0,0.57);
+            .overlay-content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+// #mosaic {
+//     position: relative;
+// }
+
+// #mosaic .mosaic-item  {
+//     opacity: 0;
+// }
+
+
+.wprig-masonry-gallery {
+    text-align: center;
+    max-width: 100vw;
+    margin: 2.5vw auto;
+
+    .cells {
+        padding: 5px;
+        box-sizing: border-box;
+        display:inline;
+        max-width:25%;
+    }
+
+}

@@ -1,0 +1,13 @@
+.wprig-dynamic-modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    max-width: 70vw;
+    min-height: 70vh;
+    height: auto;
+    z-index: 2000;
+    visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateX(-50%) translateY(-50%);
+}

@@ -1,0 +1,275 @@
+.wprig-modal-wrap{
+    width:100%;
+    overflow: hidden;
+}
+
+
+.wprig-mosaic-gallery{
+    overflow: hidden;
+}
+
+    
+    
+.wprig-grid-gallery img,
+.wprig-mosaic-gallery img{
+    width:100%;
+}
+
+.wprig-grid-gallery .cells,
+.wprig-gallery.slick-slider .cells,
+.wprig-mosaic-gallery .cells{
+    position: relative;
+    z-index: 6;
+    overflow: hidden;
+    
+}
+
+.wprig-grid-gallery .overlay ,
+.wprig-gallery.slick-slider  .overlay,
+.wprig-mosaic-gallery .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    align-items:center;   
+    transition: 0.35s all;
+    opacity: 0;
+    background:rgba(0,0,0,0.5) ;
+}
+.box-effect-active.wprig-grid-gallery .overlay ,
+.box-effect-active.wprig-gallery.slick-slider  .overlay,
+.box-effect-active.wprig-mosaic-gallery .overlay {
+    display: flex;
+}
+
+.wprig-grid-gallery .overlay-content,
+.wprig-gallery.slick-slider .overlay-content,
+.wprig-mosaic-gallery .overlay-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.wprig-gallery.slick-slider .overlay-content.overlay-layout-1,
+.wprig-mosaic-gallery .overlay-content.overlay-layout-1{
+    justify-content: center;
+    align-items: center;
+}
+.wprig-gallery.slick-slider .overlay-content.overlay-layout-2,
+.wprig-mosaic-gallery .overlay-content.overlay-layout-2{
+    justify-content: left;
+    align-items: flex-start;
+}
+.wprig-gallery.slick-slider .overlay-content.overlay-layout-3,
+.wprig-mosaic-gallery .overlay-content.overlay-layout-3{
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.wprig-gallery.slick-slider .overlay-content.overlay-layout-4,
+.wprig-mosaic-gallery .overlay-content.overlay-layout-4{
+    justify-content: left;
+    align-items: flex-end;
+}
+.wprig-gallery.slick-slider .overlay-content.overlay-layout-5,
+.wprig-mosaic-gallery .overlay-content.overlay-layout-5{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.wprig-gallery.slick-slider .overlay-content button,
+.wprig-mosaic-gallery .overlay-content button{
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+.wprig-box-effect-1.bottom-to-top  .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 100%;
+    left: 0;
+    transition: 0.35s all;
+}
+
+.wprig-box-effect-1.bottom-to-top  .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+
+.wprig-box-effect-1.top-to-bottom  .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: -100%;
+    left: 0;
+    transition: 0.35s all;
+}
+
+.wprig-box-effect-1.top-to-bottom  .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.wprig-box-effect-1.left-to-right  .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 0;
+    left: -100%;
+    transition: 0.35s all;
+}
+
+.wprig-box-effect-1.left-to-right  .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.wprig-box-effect-1.right-to-left  .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 0;
+    left: 100%;
+    transition: 0.35s all;
+}
+
+.wprig-box-effect-1.right-to-left  .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.wprig-box-effect-2  .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: 0.35s all;
+    transform:scale(0.5)
+}
+
+.wprig-box-effect-2  .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform:scale(1)
+}
+
+.wprig-box-effect-3  .cells .overlay {
+    z-index: 5;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: 0.35s all;
+    transform:scale(1.5)
+}
+
+.wprig-box-effect-3  .cells:hover .overlay {
+    z-index: 5;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform:scale(1)
+}
+
+.wprig-gallery.slider .cells{
+    /* max-height: 140px; */
+    margin: 10px;
+}
+
+.wprig-gallery.slider img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+    .wprig-gallery.slider{
+        width:100%;
+        max-width: 840px!important;
+        margin: auto;
+    }
+    
+
+.wprig-modal-wrap {
+    width:100%;
+    max-width: 90%!important;
+    margin: auto;
+}
+
+.jQueryMosaic {
+    width: 100%!important;
+    max-width: 100%!important;
+    margin: auto;
+}
+
+.wprig-masonry-gallery {
+    width: 100%;
+    max-width: 95%!important;
+    margin: auto!important;
+}
+
+.overlay ul.tool-tip {
+    position: absolute;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.overlay-content button {
+    font-size: 20px;
+}
+
+.overlay-content .share {
+    position: relative;
+}
+
+.overlay-content .tool-tip{
+    top :50px;
+    left: 0;
+}
+.overlay-content .tool-tip a {
+    padding: 5px;
+    margin : 0 5px;
+}
+
+ul.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 {
+    margin: 0;
+    padding: 0;
+}
+
+ul.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 ul li {
+    display: block;
+    padding: 10px;
+    border: 1px solid;
+}
+
+ul.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 {
+    padding: 20px 10px;
+}
+
+ul.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 a {
+    padding: 10px;
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+    font-weight: 900;
+}
+
+ul.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 li {
+    border: 1px solid;
+    display: block;
+    padding: 10px;
+}
+
+ul.wc-block-product-categories-list.wc-block-product-categories-list--depth-0 ul {
+    display: none;
+}

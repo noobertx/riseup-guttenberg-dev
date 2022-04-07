@@ -1,0 +1,16 @@
+.wprig-grids{
+    display: grid;
+    // column-gap: 10px;
+    // row-gap: 10px;
+    margin: 0;
+}
+.wprig-grids-editor > .block-editor-inner-blocks > .block-editor-block-list__layout{
+    display: grid;
+    padding: 20px 0;
+    // column-gap: 10px;
+    // row-gap: 10px;
+}
+.wprig-grids-editor .block-editor-block-list__block .block-list-appender,
+.wprig-grids-editor .block-editor-block-list__block{
+    margin: 0;
+}
