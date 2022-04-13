@@ -1,5 +1,5 @@
 {
-	"name": "Riseup-Guttenberg",
+	"name": "riseup-guttenberg-dev",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -54,8 +54,6 @@
 		"path": "^0.12.7",
 		"postcss-loader": "^3.0.0",
 		"postcss-preset-env": "^6.7.0",
-		"react-datepicker": "^3.6.0",
-		"react-rev-slider": "^1.0.1",
 		"sass-loader": "^8.0.2",
 		"slick-carousel": "^1.8.1",
 		"swiper": "^6.4.0"
